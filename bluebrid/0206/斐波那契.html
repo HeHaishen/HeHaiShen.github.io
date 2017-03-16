@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<script>
+
+		var num = [0,1];
+
+		function figure(){
+			if(num.length < 50){
+				var newNum = num[num.length - 1] + num[num.length - 2];
+				num.push(newNum);
+				figure();
+			}else{
+				return false;
+			}	
+		}
+
+		figure();
+		console.log(num)
+	</script>
+
+</body>
+</html>
