@@ -1,0 +1,242 @@
+@charset "utf-8";
+
+html,body{
+	width:100%;
+	height:100%;
+	overflow-x: hidden;
+}
+
+header{
+	position:fixed;
+	top:0;
+	width:100%;
+	height:1.2188rem;
+	display:flex;
+	line-height:1.2969rem;
+	border-bottom: 2px #eeeeee solid;
+	background:white;
+}
+
+header a{
+	font-weight: bold;
+	font-size: 0.4062rem;
+	font-family: "SimSun";
+	display:inline-block;
+	width:0.9375rem;
+	height:100%;
+	text-align:center;
+	line-height: 1.2188rem;
+}
+
+header span{
+font-size:0.4062rem;
+	font-family:"Microsoft YaHei";
+	display:inline-block;
+	height:100%;
+	line-height:1.2188rem; 
+	text-align: center;
+	flex:1;
+}
+
+.content{
+	margin-top: 1.2188rem;
+	
+	background:#f7f7f7;
+	width:100%;
+
+	
+}
+
+ul{
+	background:white;
+	padding: 0 3% 0 3%;
+	box-sizing:border-box;
+	-o-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}
+
+.list1{
+	width:100%;
+	margin-bottom:16px;
+	height:6.25rem;
+	background:white;
+
+}
+.list1 li:nth-child(1){
+	width:100%;
+	height:1.875rem;
+	padding:0.3125rem 0 0.3125rem 0;
+	box-sizing:border-box;
+	display:flex;
+}
+
+.list1 li:nth-child(1) p:nth-child(2){
+	flex:1;
+}
+
+.list1 li:nth-child(1) p:nth-child(1){
+	width:1.2812rem;
+	height:100%;
+	margin-right: 0.1875rem;
+}
+
+
+.list1 li:nth-child(1) p:nth-child(3){
+	height:100%
+}
+
+.list1 li:nth-child(1) p:nth-child(3) span{
+	display: block;
+	height:0.4688rem;
+	margin-top:60%;
+	font-size:0.375rem;
+	color:#ff2150;
+	font-family:"Microsoft YaHei";
+}
+
+.list1 li:nth-child(1) p:nth-child(2) span{
+	display:block;
+	margin-bottom:0.1875rem;
+}
+
+.list1 li:nth-child(1) p:nth-child(1) img{
+	width:100%;
+	height:100%;
+}
+
+.list1 li:nth-child(2){
+	width:100%;
+	height:0.9375rem;
+
+}
+
+.list1 li:nth-child(2) p:nth-child(1){
+	float:left;
+}
+
+.list1 li:nth-child(2) p:nth-child(2){
+	float:right;
+}
+
+.list1 li:nth-child(2) p:nth-child(2) span{
+	width:0.625rem;
+	height:0.625rem;
+	display:inline-block;
+	background:url("../img/icon_showtall_07.jpg") center center no-repeat;
+}
+
+.list1 li:nth-child(3){
+	width:100%;
+	height:1.5625rem;
+}
+
+.list1 li:nth-child(3) input{
+	width:100%;
+	height:100%;
+	background:#f7f7f7;
+	outline: none;
+
+}
+
+.list1 li:nth-child(4){
+	height:1.875rem;
+	width:100%;
+	padding:0.2188rem 3% 0.2188rem 3%;
+	box-sizing:border-box;
+	-o-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	
+	display:flex;
+}
+
+.list1 li:nth-child(4) p:first-child{
+	margin-left:0.0rem;
+	width:1.2812rem;
+	height:1.2812rem;
+	background:url("../img/pic_showtall_06.jpg") center center no-repeat;
+}
+
+.list1 li:nth-child(4) p{
+	width:1.2812rem;
+	height:1.2812rem;
+	background:url("../img/icon_tallshow_13.jpg") center center no-repeat;
+	margin-left:0.3438rem;
+}
+
+/*内容2*/
+.list2{
+	background:white;
+}
+
+
+
+.list2 li{
+	width:100%;
+	height:0.9375rem;
+
+}
+
+.list2 li:first-child{
+ margin-bottom:0.3438rem;
+ border-bottom:1px #f7f7f7 solid;
+}
+
+.list2 li p:nth-child(1){
+	height:100%;
+	float:left;
+	line-height:0.9375rem; 
+}
+.list2 li p:nth-child(2){
+	float:right;
+}
+
+.list2 span{
+	display:inline-block;
+	width:0.625rem;
+	height:0.625rem;
+	background:url(../img/icon_showtall_07.jpg) center center no-repeat;
+}
+
+.list2 p:nth-child(1){
+	float:left;
+}
+
+.list2 p:nth-child(2){
+	float:right;
+}
+
+.startchange{
+	background:url("../img/icon_showtall_08_07.jpg") center center no-repeat;
+}
+
+/*尾部*/
+footer{
+	width:100%;
+	height:1.2656rem;
+	background:#ff2150;
+	position:fixed;
+	bottom:0;
+	text-align: center;
+	line-height: 1.2656rem;
+	color:white;
+	font-size:0.4375rem;
+	box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	font-family:"Microsoft YaHei";
+}
+
+footer a{
+	display:block;
+	width:100%;
+	height:100%;
+	color:white;
+	font-size:0.4375rem;
+}
+

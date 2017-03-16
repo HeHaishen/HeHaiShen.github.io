@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="yes" name="apple-touch-fullscreen">
+	<meta content="telephone=no,email=no" name="format-detection">
+	<meta name="wap-font-scale" content="no">
+	<script src="js/flexible.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/preferential.css">
+</head>
+<body>
+
+<header>
+		<a href="javascript:window.history.back()"> < </a>
+		<span>管理收货地址</span>
+		<a href="#">使用说明</a>
+
+
+
+	</header>
+
+
+	<div class="tabBox" id="leftTabBox">
+				<div class="hd">
+					<ul>
+						<li class="title">
+							<a href="javascript:void(0);">
+								全部(<i>18</i>)
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								未使用(<i>6</i>)
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								已使用(<i>6</i>)
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								已过期(<i>6</i>）
+							</a>
+						</li>
+						
+					</ul>
+				</div>
+				<div class="bd">
+						<ul class="the_all">
+							<li>
+								<div></div>
+								<img src="img/icon_youhuijuan_04.jpg">
+								<div></div>
+
+							</li>
+							
+							<li><img src="img/youhuijuan_24.jpg"></li>
+
+							<li><img src="img/youhuijuan_24.jpg"></li>
+							<li><img src="img/youhuijuan_24.jpg"></li>
+							<li><img src="img/youhuijuan_24.jpg"></li>
+							<li><img src="img/youhuijuan_24.jpg"></li>
+
+							<li>
+								<img src="img/youhuijuan_33.jpg">
+							</li>
+
+							<li>
+								<img src="img/youhuijuan_33.jpg">
+							</li>
+							<li>
+								<img src="img/youhuijuan_33.jpg">
+							</li>
+							<li>
+								<img src="img/youhuijuan_33.jpg">
+							</li>
+							<li>
+								<img src="img/youhuijuan_33.jpg">
+							</li>
+							
+							
+						</ul>
+						<ul class="hold">
+							<li><img src="img/youhuijuan_24.jpg"></li>
+
+							<li><img src="img/youhuijuan_24.jpg"></li>
+							<li><img src="img/youhuijuan_24.jpg"></li>
+							<li><img src="img/youhuijuan_24.jpg"></li>
+							<li><img src="img/youhuijuan_24.jpg"></li>
+
+						</ul>
+						<ul class="used">  
+							<li>
+								<img src="img/youhuijuan_33.jpg">
+							</li>
+							<li>
+								<img src="img/youhuijuan_33.jpg">
+							</li>
+							<li>
+								<img src="img/youhuijuan_33.jpg">
+							</li>
+						</ul>
+
+						<ul class="passdate">
+							<li>
+								<img src="img/youhuijuan_33.jpg">
+							</li>
+							<li>
+								<img src="img/youhuijuan_33.jpg">
+							</li>
+							<li>
+								<img src="img/youhuijuan_33.jpg">
+							</li>
+						</ul>
+						
+						
+				</div>
+			</div>
+		<script type="text/javascript" src="js/TouchSlide.1.1.js"></script>
+		<script type="text/javascript" src="js/parameter.js"></script>
+
+		<script type="text/javascript">
+			var bd =document.querySelector(".bd");
+			var ul=bd.querySelectorAll("ul");
+			var lis=ul[0].querySelectorAll("li");
+
+			var title=document.querySelector(".title");
+			var tlis=title.querySelectorAll("li");
+
+
+			// function change(sum){
+			// 	for(var y= 0;y<sum.length;y++){
+			// 		sum[y].index=y;
+			// 		if(sum[y].classList.contain("on")){
+			// 			return sum[y].index;
+			// 		}
+			// 	}
+			// }
+
+
+		
+
+
+
+			// bd.style.display="flex";
+			var hei=lis[0].offsetHeight;
+			console.log();
+			bd.style.height="auto";
+
+
+			for(var x = 0 ;x<ul.length;x++){
+				ul[x].style.display="block";
+				ul[x].classList.add("theTop");
+				console.log(ul[x].offsetHeight);
+				var ulHeight;
+				ul[x].addEventListener("touchstart",function(){
+						ulHeight=this.offsetHeight;
+
+						change(tlis);
+				})
+				// ul[x].style.height=(ul[x].children.length)*hei;
+
+				// console.log(ul[x].offsetHeight);
+				// .style.height="auto";
+				// ul[x].classlist.add("wHidden");
+			}
+
+
+			
+		</script>
+		
+
+</body>
+</html>

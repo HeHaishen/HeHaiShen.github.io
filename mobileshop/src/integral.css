@@ -1,0 +1,43 @@
+html,body{
+	width:100%;
+	height:100%;
+	overflow-x: hidden;
+}
+
+header{
+	position:fixed;
+	top:0;
+	width:100%;
+	height:1.2969rem;
+	display:flex;
+	line-height:1.2969rem;
+	border-bottom: 1px #eeeeee solid;
+	background:white;
+}
+
+header a{
+	font-weight: bold;
+	font-size: 0.4062rem;
+	font-family: "SimSun";
+	display:inline-block;
+	width:0.9375rem;
+	height:100%;
+	text-align:center;
+	line-height: 1.2188rem;
+}
+
+header span{
+font-size:0.4062rem;
+	font-family:"Microsoft YaHei";
+	display:inline-block;
+	height:100%;
+	line-height:1.2188rem; 
+	text-align: center;
+	flex:1;
+}
+
+nav{
+	background:url("../img/integral_02.jpg") 0 0 no-repeat;
+	width:100%;
+	height:3.75rem;
+}

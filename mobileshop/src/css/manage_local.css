@@ -1,0 +1,162 @@
+@charset "utf-8";
+
+
+html,body{
+	width:100%;
+	height:100%;
+	overflow-x: hidden;
+}
+
+header{
+	position:fixed;
+	top:0;
+	width:100%;
+	height:1.2188rem;
+	display:flex;
+	line-height:1.2969rem;
+	border-bottom: 2px #eeeeee solid;
+	background:white;
+}
+
+header a{
+	font-weight: bold;
+	font-size: 0.4062rem;
+	font-family: "SimSun";
+	display:inline-block;
+	width:0.9375rem;
+	height:100%;
+	text-align:center;
+	line-height: 1.2188rem;
+}
+
+header span{
+font-size:0.4062rem;
+	font-family:"Microsoft YaHei";
+	display:inline-block;
+	height:100%;
+	line-height:1.2188rem; 
+	text-align: center;
+	flex:1;
+}
+
+header a:nth-child(3){
+	display:inline-block;
+	width:1.4062rem;
+	height:100%;
+	line-height:1.2188rem;
+	text-align: center;
+	font-size: 0.3438rem;
+	color:#5c5c5c;
+}
+
+.content{
+	width:100%;
+	height:100%;
+	background:#f7f7f7;
+	padding:1.2969rem 0 2.3438rem 0;
+	-o-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+	overflow-x: hidden;
+	background:#f7f7f7;
+}
+
+ul{
+	background:white;
+	border-top:1px #ddd solid;
+	border-bottom:1px #ddd solid;
+	margin-top: 6px;
+	padding:0 3% 0 3%;
+	-o-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+.border_img{
+	width:100%;
+	height:0.0938rem;
+	background:url("../img/pic_ensurelist_02.jpg") 0 0 repeat ;
+}
+
+.l1{
+	border-bottom:1px #ddd solid;
+	width:100%;
+	height:1.5625rem;
+
+}
+
+ul li:nth-child(2){
+	width:100%;
+	height:1.0rem;
+}
+
+.l1 p:nth-child(1){
+	
+	line-height:0.7812rem;
+	color:#4e4e4e;
+	font-size:0.4062rem;
+}
+.l1 p:nth-child(2){
+
+	line-height:0.7812rem;
+	color:#a7a7a7;
+	font-size:0.3438rem;
+}
+
+ul li:nth-child(2) p:nth-child(1){
+	float:left;
+	line-height: 1.0rem;
+}
+
+ul li:nth-child(2) p:nth-child(2){
+	float:right;
+	line-height: 1.0rem;
+
+}
+
+ul li:nth-child(2) p:nth-child(3){
+	float:right;
+	line-height: 1.0rem;
+	margin-right:0.3438rem;
+}
+
+ul li:nth-child(2) p:nth-child(1) em{
+	display:inline-block;
+	border:1px #ddd solid;
+	width:0.4375rem;
+	height:0.4375rem;
+	border-radius:50%;
+	-o-border-radius:50%;
+	-ms-border-radius:50%;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	margin-top:0.2812rem;
+	float:left;
+}
+
+ul li:nth-child(2) p:nth-child(1) span{
+	display:inline-block;
+	height:1.0rem;
+	width:1.3906rem;
+	float:left;
+	color:#a7a7a7;
+	margin-left:0.1875rem;
+}
+
+ul li:nth-child(2) p:nth-child(3) img{
+	display:inline-block;
+	height:1.0rem;
+	float:left;
+	margin-right:0.1875rem;
+}
+
+ul li:nth-child(2) p:nth-child(2) img{
+	display:inline-block;
+	height:1.0rem;
+	float:left;
+	margin-right:0.1875rem;
+}
