@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	
+	*{
+		margin:0;
+		padding:0;
+	}
+
+	ul{
+		list-style: none;
+	}
+
+	a{
+		text-decoration: none;
+	}
+
+	.slide{
+		position:relative;
+		width:520px;
+		height: 280px;
+		overflow: hidden;
+	}
+
+	.pics{
+		position: absolute;
+		left:0;
+		top: 0;
+	}
+
+	.pics li{
+		display: block;
+		float: left;
+	}
+
+	.pics li.active{
+		z-index : 2;
+	}
+
+	.ctrl{
+		position: absolute;
+		left: 50%;
+		margin-left: -30px;
+		bottom: 15px;
+		width: 58px;
+		height: 10px;
+		padding:2px;	
+		z-index: 999;
+		background: rgba(255,255,255,0.5);
+		border-radius:10px;
+	}
+
+	.ctrl span{
+		display: block;
+		float: left;
+		width:10px;
+		height: 10px;
+		background: #B7B7B7;
+		margin:0 2px;
+		border-radius: 50%;
+		cursor: pointer;
+	}
+
+	.ctrl span.active{
+		background: red;
+	}
+	
+	#prev,#next{
+		width:24px;
+		height: 36px;
+		position: absolute;
+		top:50%;
+		margin-top: -18px;
+		background: rgba(0,0,0,0.5);
+		z-index: 999;
+		cursor: pointer;
+		text-align: center;
+		line-height: 36px;
+		color: #fff;
+		opacity: 0;
+	}
+
+	#prev{
+		left:0;
+	}
+	#prev:after{
+		content:"<";
+	}
+
+	#next{
+		right:0;
+	}
+
+	#next:after{
+		content:">";
+	}
+
+	</style>
+</head>
+<body>
+	
+	<div class="slide" id="slide">
+		
+		<ul class="pics" id="pics">
+			<li><a href="#"><img src="pic4.jpg_.webp"></a></li>
+			<li><a href="#"><img src="pic1.jpg"></a></li>
+			<li><a href="#"><img src="pic2.jpg"></a></li>
+			<li><a href="#"><img src="pic3.jpg_.webp"></a></li>
+		</ul>
+
+		<span id="prev"></span>
+		<span id="next"></span>
+
+		<div class="ctrl" id="ctrl">
+			<span class="active"></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+
+	</div>
+	<script src="slide.js"></script>
+	<script>
+
+	function $(id){
+		return document.getElementById(id);
+	}
+
+
+	var slide = new Slide();
+	slide.init({
+		wrap : $("slide"),
+		pics : $("pics"),
+		ctrl : $("ctrl")
+	});
+
+	</script>
+</body>
+</html>

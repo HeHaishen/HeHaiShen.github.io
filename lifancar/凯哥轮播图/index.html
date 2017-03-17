@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			*{
+				margin:0;
+				padding:0;
+			}
+			ul{
+				list-style: none;
+			}
+			.wrap{
+				position: relative;
+				width: 500px;
+				height: 300px;
+				border:1px solid #000;
+				margin: 100px auto;
+				overflow: hidden;
+				top: 0;
+			}
+			.wrap ul{
+				position: absolute;
+				width: 2500px;
+				height: 100%;				
+				left:-500px;
+				top:0;
+			}
+			.wrap ul li{
+				float: left;
+				width: 500px;
+				height: 300px;
+				background: url("img/屏幕快照 2016-11-28 09.06.39.png") no-repeat;
+			}
+			.button-wrap{
+				text-align: center;
+			}
+			.button-wrap button{
+				display: inline-block;
+				
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<ul class="inner">
+				<li>3</li>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>1</li>
+			</ul>
+		</div>
+		<div class="button-wrap">
+			<button id="prev">上一张</button>
+			<button id="next">下一张</button>
+		</div>
+		<script type="text/javascript">
+			var ul = document.getElementsByClassName("inner")[0];
+			var arrLi =ul.getElementsByTagName("li");
+			var prev = document.getElementById("prev");
+			var next = document.getElementById("next");
+			var width = ul.offsetWidth/arrLi.length;
+			var i = 0,x = 1;
+			// i是速度
+			var num = arrLi.length - 1;
+			var toggle = true;
+			var timex;
+//			屏幕滚动
+			function move (k){
+				// k是方向
+				clearInterval(timex);
+				toggle = false;
+				var left = ul.offsetLeft;
+				var time = setInterval(function(){
+					i+=10;
+					ul.style.left = (k*i)+left+"px";
+					if(i>=width){
+						x = x - k;
+						if(x >= num && k == -1){
+							ul.style.left = -width+"px";
+							x = 1;
+						}
+						if(x == 0 && k == 1){
+							ul.style.left = (-num+1)*width+"px";
+							x = num-1;
+						}
+						
+						clearInterval(time);
+						i = 0;
+						toggle = true;
+						timex = setInterval(function(){
+							move(-1);
+						},2000)
+					}
+				},17)
+			}
+			next.onclick = function(){
+				clearInterval(timex);
+				if(toggle){
+					move(-1);
+				}
+			}
+			prev.onclick = function(){
+				clearInterval(timex);
+				if(x == 0){
+					return false;
+				}
+				if(toggle){
+					move(1);
+				}
+			}
+			timex = setInterval(function(){
+				move(-1);
+			},2000)
+		</script>
+	</body>
+</html>
