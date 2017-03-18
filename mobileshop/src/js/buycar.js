@@ -101,7 +101,7 @@ getPrice();
 
 
 		//选中所有兄弟节点的em,
-		var  
+		
 		function selectorbrother(selct_thisshop,thiselements){
 			if(thiselements.classList.contains("activeselect")){
 						// console.log(this.parentNode.parentNode.children);
